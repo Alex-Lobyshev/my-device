@@ -10,7 +10,7 @@
             <form action="https://echo.htmlacademy.ru" method="post"  class="header-search">
                 <label for="main-search" class="visually-hidden">Поиск</label>
                 <input type="search" id="main-search" name="search" placeholder="Поиск по сайту">
-                <a class="button" href="https://htmlacademy.ru">Найти</a>
+                <button class="button button-search" href="#">Найти</button>
             </form>
             <ul class="header-user-navigation">
                 <li class="login-link header-login-link"><a href="#">Валентин Петухов</a></li>
@@ -63,19 +63,21 @@
                     <fieldset>
                         <legend>Стоимость</legend>
                         <label for="filter-price" class="viually-hidden">Фильтр цены</label>
-                        <span>от 0</span>
-                        <input type="range" id="filter-price" name="filter-price" min="0" max="10000" step="100">
-                        <span>до 5000</span>
+                        <input type="range" id="filter-price" name="filter-price" min="0" max="10000">
+                        <p>
+                            <span>от 0</span>
+                            <span>до 5000</span>
+                        </p>
                     </fieldset>
                     <fieldset>
                         <legend>Цвет</legend>
                         <ul>
                             <li class="filter-option">
-                                <input type="checkbox" id="color-black" name="black" class="visually-hidden filter-input filter-input-checkbox" checked>
+                                <input type="checkbox" id="color-black" name="black" class="visually-hidden filter-input filter-input-checkbox"checked>
                                 <label for="color-black">Черный</label>
                             </li>
                             <li class="filter-option">
-                                <input type="checkbox" id="color-white" name="white" class="visually-hidden filter-input filter-input-checkbox" >
+                                <input type="checkbox" id="color-white" name="white" class="visually-hidden filter-input filter-input-checkbox">
                                 <label for="color-white">Белый</label>
                             </li>
                             <li class="filter-option">
@@ -87,7 +89,7 @@
                                 <label for="color-red">Красный</label>
                             </li>
                             <li class="filter-option">
-                                <input type="checkbox" id="color-pink" name="pink" >
+                                <input type="checkbox" id="color-pink" name="pink" class="visually-hidden filter-input filter-input-checkbox">
                                 <label for="color-pink">Розовый</label>
                             </li>
                         </ul>
