@@ -95,12 +95,28 @@
         </footer>
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Напишите нам</h2>
-            <!--форма-->
-            <span class="modal-close">Закрыть</span>
+            <form action="https://echo.htmlacademy.ru" method="post"  class="feedback">
+                <p>
+                    <label for="feedback-name">Ваше имя</label>
+                    <input type="text" id="feedback-name" name="feedback-name" placeholder="Имя Фамилия">
+
+                    <label for="feedback-mail">Ваше e-mail</label>
+                    <input type="email" id="feedback-mail" name="feedback-mail" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="feedback-message">Тект письма</label>
+                    <textarea id="feedback-message" name="feedback-message" placeholder="В свободной форме" cols="40" rows="5"></textarea>
+                </p>
+                <button type="submit" class="button">Отправить</button>
+            </form>
+            <button type="button" class="modal-close">Закрыть</button>
         </section>
         <section class="modal-map">
             <h2 class="visually-hidden">Как к нам добраться</h2>
-            <span class="modal-close">Закрыть</span>
+            <p>
+                <img src="img/map.jpg" width="790" height="360" alt="Офис компании по адресу ул. Строителей 15, Москва">
+            </p>
+            <button type="button" class="modal-close">Закрыть</button>
         </section>
     </body>
 </html>

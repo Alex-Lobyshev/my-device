@@ -7,7 +7,11 @@
     <body>
         <header class="main-header">
             <a href="index.html" class="header-logo">Device</a>
-            <!--поиск по сайту-->
+            <form action="https://echo.htmlacademy.ru" method="post"  class="header-search">
+                <label for="main-search" class="visually-hidden">Поиск</label>
+                <input type="search" id="main-search" name="search" placeholder="Поиск по сайту">
+                <a class="button" href="https://htmlacademy.ru">Найти</a>
+            </form>
             <ul class="header-user-navigation">
                 <li class="login-link header-login-link"><a href="#">Валентин Петухов</a></li>
                 <li class="login-link header-login-link get-out"><a href="#">Выйти</a></li>
