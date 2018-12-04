@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "Gilroy-Extrabold";
+	font-style: bold;
+	font-weight: bold;
+	src: local("Gilroy-ExtraBold"),
+	url("../font/gilroyextrabold.woff2");
+}
+
+@font-face {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Gilroy-Light"),url("../font/gilroylight.woff2");
+}
+
+@font-face {
+	font-family: "OpenSans-Light";
+	font-style: normal;
+	font-weight: normal;
+	src: local("OpenSans-Light"),url("../font/opensanslight.woff2");
+}
+
+@font-face {
+	font-family: "OpenSans-regular";
+	font-style: regular;
+	font-weight: regular;
+	src: local("OpenSans-regular"),url("../font/opensans.woff2");
+}
+
+
+.header-logo {
+	font-family: "Gilroy-Extrabold";
+	color: rgb(0, 0, 0, 1);
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+
+.header-logo:hover {
+	font-family: "Gilroy-Extrabold";
+	color: rgb(0, 0, 0, 0.6);
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+
+.header-logo:active {
+	font-family: "Gilroy-Extrabold";
+	color: rgb(0, 0, 0, 0.3);
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 48px;
+	text-transform: uppercase;
+}
