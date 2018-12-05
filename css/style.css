@@ -1,99 +1,172 @@
 @font-face {
-	font-family: "Gilroy-Extrabold";
-	font-style: bold;
-	font-weight: bold;
-	src: local("Gilroy-ExtraBold"),
-	url("../font/gilroyextrabold.woff2");
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 800;
+	src: local("Gilroy ExtraBold"),
+         url("../fonts/gilroyextrabold.woff2") format("woff2"),
+         url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Gilroy";
 	font-style: normal;
-	font-weight: normal;
-	src: local("Gilroy-Light"),url("../font/gilroylight.woff2");
+	font-weight: 400;
+	src: local("Gilroy Light"),
+         url("../fonts/gilroylight.woff2") format("woff2"),
+         url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
-	font-family: "OpenSans-Light";
+	font-family: "Open Sans";
 	font-style: normal;
-	font-weight: normal;
-	src: local("OpenSans-Light"),url("../font/opensanslight.woff2");
+	font-weight: 400;
+	src: local("Open Sans"),
+         url("../fonts/opensans.woff2") format("woff2"),
+         url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
-	font-family: "OpenSans-regular";
-	font-style: regular;
-	font-weight: regular;
-	src: local("OpenSans-regular"),url("../font/opensans.woff2");
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 300;
+	src: local("Open Sans Light"),
+         url("../fonts/opensanslight.woff2") format("woff2"),
+         url("../fonts/opensanslight.woff") format("woff");
+}
+
+html {
+	box-sizing: border-box; 
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit; 
 }
 
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
-  font-family: "OpenSans-Light", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #464646;
-  text-transform: uppercase;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #464646;
 
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
+
+img {
+	max-width: 100% 
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/*Стили для шапки*/
 
 .main-header {
 	background-color: #f7e296;
 }
 
 .header-logo {
-	font-family: "Gilroy-Extrabold";
-	color: rgb(0, 0, 0, 1);
+	font-family: "Gilroy";
+	color: #000000;
 	font-size: 48px;
-	font-weight: 900;
+	font-weight: 800;
 	line-height: 48px;
 	text-transform: uppercase;
 }
-
+	
 .header-logo:hover {	
-	color: rgb(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .header-logo:active {
-	color: rgb(0, 0, 0, 0.3);
-	font-size: 48px;
-	font-weight: 900;
-	line-height: 48px;
-	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
 }
 
-.header-search input[type="search"] {
-  font: inherit;
-  color: rgb(0, 0, 0, 0.3);
+/*Поиск в шапке сайта*/
+
+.header-search {
+	background-color: transparent;
+	outline: 0;
+	border: 0;
 }
 
-.header-search input[type="search"]:hover,
-.header-search input[type="search"]:focus {
-  font: inherit;
-  color: rgb(0, 0, 0, 0.6);
+.header-search:focus {
+	border-bottom: 2px solid #000000;
 }
 
-.header-search input[type="search"]:focus {
-  font: inherit;
-  color: rgb(0, 0, 0, 1);
+.header-search::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-search:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-search::-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-search::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-search:hover::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.header-search:hover:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.header-search:hover::-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.header-search:hover::placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.header-search:focus::-webkit-input-placeholder {
+	color: #000000;
+}
+
+.header-search:focus:-ms-input-placeholder {
+	color: #000000;
+}
+
+.header-search:focus::-ms-input-placeholder {
+	color: #000000;
+}
+
+.header-search:focus::placeholder {
+	color: #000000;
 }
 
 .button-search {
-	font-family: "OpenSans-Light", Arial, sans-serif;
-	color: rgb(0, 0, 0, 1);
-	font-size: 15px;
-	font-weight: 900;
-	line-height: 30px;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: #000000;
+	font-size: inherit;
+	font-weight: 300;
+	line-height: inherit;
 
-	background-color: #f7e296;
+	background-color: transparent;
 	border: 2px solid black;
 }
 
@@ -105,81 +178,56 @@ a {
 }
 
 .button-search:active {
-	color: rgb(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #000000;
 }
 
-.header-user-navigation,
-.header-product-manager {
+.main-header ul{
 	list-style-type: none;
+	padding-left: 0;
 }
 
-.login-link,
-.compare-link,
-.cart-link {
-	font-family: "OpenSans-Light", Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 900;
-	line-height: 30px;
+.link {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: inherit;
+	font-weight: 300;
+	line-height: inherit;
+	color: #000000;
 }
 
-.header-login-link a,
-.header-compare-link a,
-.header-cart-link a {
-	font-family: inherit;
-	color: rgb(0, 0, 0, 1);
-	font-size: 15px;
-	font-weight: 900;
-	line-height: 30px;
-	text-transform: uppercase;
+
+.link:hover,
+.link:focus {
+	color: rgba(0, 0, 0, 0.6);
 }
 
-.header-login-link a:hover,
-.header-compare-link a:hover,
-.header-cart-link a:hover,
-.header-login-link a:focus,
-.header-compare-link a:focus,
-.header-cart-link a:focus {
-	font-family: inherit;
-	color: rgb(0, 0, 0, 0.6);
-}
-
-.header-login-link a:active,
-.header-compare-link a:active,
-.header-cart-link a:active {
-	font-family: inherit;
-	color: rgb(0, 0, 0, 0.3);
-}
-
-.site-navigation,
-.inner-menu {
-	list-style-type: none;
+.link:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation-item a{
-	font-family: "Gilroy-Extrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
-  	line-height: 24px;
-  	font-weight: 900;
-  	color: rgb(0, 0, 0, 1);
-  	text-transform: uppercase;
+	line-height: 24px;
+	font-weight: 800;
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .site-navigation-item a:hover,
 .site-navigation-item a:focus {
-	color: rgb(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .site-navigation-item a:active {
-	color: rgb(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .inner-menu a{
-	font-family: "OpenSans-Light", Arial, sans-serif;
-	font-size: 15px;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: inherit;
   	line-height: 36px;
-  	font-weight: 400;
-  	color: rgb(0, 0, 0, 1);
-}
+  	font-weight: 300;
+  	color: #000000;
 }
