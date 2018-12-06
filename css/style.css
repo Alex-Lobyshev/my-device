@@ -82,21 +82,26 @@ img {
 	background-color: #f7e296;
 }
 
-.header-logo {
-	font-family: "Gilroy";
+.main-header a {
 	color: #000000;
-	font-size: 48px;
-	font-weight: 800;
-	line-height: 48px;
-	text-transform: uppercase;
 }
-	
-.header-logo:hover {	
+
+.main-header a:hover,
+.main-hrader a:focus {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.header-logo:active {
+.main-header a:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-logo {
+	font-family: "Gilroy";
+	font-size: 48px;
+	font-weight: 800;
+	line-height: 48px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 /*Поиск в шапке сайта*/
@@ -160,14 +165,12 @@ img {
 }
 
 .button-search {
-	font-family: "Open Sans", Arial, sans-serif;
 	color: #000000;
-	font-size: inherit;
 	font-weight: 300;
 	line-height: inherit;
 
 	background-color: transparent;
-	border: 2px solid black;
+	border: 2px solid #000000;
 }
 
 .button-search:hover,
@@ -183,51 +186,25 @@ img {
 	background-color: #000000;
 }
 
-.main-header ul{
+.main-header ul {
 	list-style-type: none;
 	padding-left: 0;
 }
 
 .link {
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: inherit;
-	font-weight: 300;
-	line-height: inherit;
 	color: #000000;
 }
 
-
-.link:hover,
-.link:focus {
-	color: rgba(0, 0, 0, 0.6);
-}
-
-.link:active {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.site-navigation-item a{
+.site-navigation-item > a {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
 	color: #000000;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-.site-navigation-item a:hover,
-.site-navigation-item a:focus {
-	color: rgba(0, 0, 0, 0.6);
-}
-
-.site-navigation-item a:active {
-	color: rgba(0, 0, 0, 0.3);
-}
-
 .inner-menu a{
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: inherit;
   	line-height: 36px;
-  	font-weight: 300;
-  	color: #000000;
 }
