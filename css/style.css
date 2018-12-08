@@ -54,7 +54,7 @@ body {
 	font-weight: 300;
 	color: #464646;
 
-	background-color: #ffffff;
+	
 }
 
 a {
@@ -95,7 +95,7 @@ img {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.header-logo {
+.logo {
 	font-family: "Gilroy";
 	font-size: 48px;
 	font-weight: 800;
@@ -186,7 +186,8 @@ img {
 	background-color: #000000;
 }
 
-.main-header ul {
+.main-header ul,
+.footer-main ul {
 	list-style-type: none;
 	padding-left: 0;
 }
@@ -205,6 +206,58 @@ img {
 	text-transform: uppercase;
 }
 
-.inner-menu a{
-  	line-height: 36px;
+.inner-menu a {
+	line-height: 36px;
+}
+
+
+<!-- Разметка основного контента -->
+
+.title-main {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 800;
+	color: #000000;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.trans-company {
+	list-style-type: none;
+	color: inherit;
+}
+
+.link-main {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	color: #000000;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	background-color: #e0cd88;
+	background-image: url(../img/background-link.svg);
+	background-position: 5px 5px;
+}
+
+<!---- Стилизация футера --->
+
+.footer-main {
+	background: red;
+}
+
+.footer-link {
+	color: rgba(255, 255,255, 0.7);
+}
+
+.footer-navigation a{
+	color: #ffffff;
+}
+
+
+
+.footer-logo {
+	color: #ffc600;
 }
