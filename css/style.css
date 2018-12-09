@@ -211,7 +211,7 @@ img {
 }
 
 
-<!-- Разметка основного контента -->
+/*Разметка основного контента */
 
 .title-main {
 	font-family: "Gilroy", Arial, sans-serif;
@@ -238,26 +238,189 @@ img {
 	text-transform: uppercase;
 
 	background-color: #e0cd88;
-	background-image: url(../img/background-link.svg);
 	background-position: 5px 5px;
 }
 
-<!---- Стилизация футера --->
+/* Стилизация футера */
 
 .footer-main {
-	background: red;
+	background: #464646;
 }
 
+.footer-logo {
+	color: #ffc600;
+	letter-spacing: 1px;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+	color: rgba(255, 198, 0, 0.6);
+}
+
+.footer-logo:active {
+	color: rgba(255, 198, 0, 0.3);
+}
+
+/*Навигация user в футере*/
 .footer-link {
 	color: rgba(255, 255,255, 0.7);
 }
 
+.footer-link:hover,
+.footer-link:focus {
+	color: #ffffff;
+}
+
+.footer-link:active {
+	color: rgba(255, 255,255, 0.3);
+}
+
+/*Навигация в футере*/
 .footer-navigation a{
 	color: #ffffff;
 }
 
-
-
-.footer-logo {
-	color: #ffc600;
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+	color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+/*Логотип академии в футере*/
+.company-create:hover,
+.company-create:focus {
+	opacity: 0.6;
+}
+
+.company-create:active {
+	opacity: 0.3;
+}
+
+/*Тtлефон и адрес в футере*/
+.contacts {
+	color: #ffffff;
+}
+
+
+/*Соц кнопки в футере*/
+.social-button {
+	opacity: 0.3;
+}
+
+.social-button:hover,
+.social-button:focus {
+	opacity: 0.6;
+}
+
+.social-button:active {
+	opacity: 0.1;
+}
+
+/*Кнопка закрытия модального окна*/
+.modal-close {
+	opacity: 0.5;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+	opacity: 1;
+	outline: 0;
+}
+
+.modal-close:active {
+	opacity: 0.3;
+	outline: 0;
+}
+
+/*Стили для модального окна формы*/
+.feedback {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: 800;
+
+}
+
+.feedback-input::-webkit-input-placeholder {
+	color: rgba(70, 70, 70, 0.4);
+	background: rgba(242, 242, 242, 0.5);
+}
+
+.feedback-input:-ms-input-placeholder {
+	color: rgba(70, 70, 70, 0.4);
+	background: rgba(242, 242, 242, 0.5);
+}
+
+.feedback-input::-ms-input-placeholder {
+	color: rgba(70, 70, 70, 0.4);
+	background: rgba(242, 242, 242, 0.5);
+}
+
+.feedback-input::placeholder {
+	color: rgba(70, 70, 70, 0.4);
+	background: rgba(242, 242, 242, 0.5);
+}
+
+.feedback-input:hover::-webkit-input-placeholder {
+	background: rgba(234, 234, 234, 0.8);
+}
+
+.feedback-input:hover:-ms-input-placeholder {
+	background: rgba(234, 234, 234, 0.8);
+}
+
+.feedback-input:hover::-ms-input-placeholder {
+	background: rgba(234, 234, 234, 0.8);
+}
+
+.feedback-input:hover::placeholder {
+	background: rgba(234, 234, 234, 0.8);
+}
+
+.feedback-input:focus::-webkit-input-placeholder {
+	background: rgba(234, 234, 234, 0.5);
+}
+
+.feedback-input:focus:-ms-input-placeholder {
+	background: rgba(234, 234, 234, 0.5);
+}
+
+.feedback-input:focus::-ms-input-placeholder {
+	background: rgba(234, 234, 234, 0.5);
+}
+
+.feedback-input:focus::placeholder {
+	background: rgba(234, 234, 234, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Кнопка закрытия модальныйх окон*/
+.modal-close {
+	background: none;
+	border: 0;
+	opacity: 0.5;
+}
+
+.modal-close
