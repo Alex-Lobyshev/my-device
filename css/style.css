@@ -322,6 +322,8 @@ img {
 /*Кнопка закрытия модального окна*/
 .modal-close {
 	opacity: 0.5;
+	background: none;
+	border: 0;
 }
 
 .modal-close:hover,
@@ -396,31 +398,3 @@ img {
 .feedback-input:focus::placeholder {
 	background: rgba(234, 234, 234, 0.5);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Кнопка закрытия модальныйх окон*/
-.modal-close {
-	background: none;
-	border: 0;
-	opacity: 0.5;
-}
-
-.modal-close
