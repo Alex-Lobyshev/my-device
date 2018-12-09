@@ -10,7 +10,7 @@
 @font-face {
 	font-family: "Gilroy";
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	src: local("Gilroy Light"),
          url("../fonts/gilroylight.woff2") format("woff2"),
          url("../fonts/gilroylight.woff") format("woff");
@@ -192,17 +192,13 @@ img {
 	padding-left: 0;
 }
 
-.link {
-	color: #000000;
-}
-
 .site-navigation-item > a {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
 	color: #000000;
-	letter-spacing: 1px;
+	letter-spacing: 3.5px;
 	text-transform: uppercase;
 }
 
@@ -220,25 +216,29 @@ img {
 	font-weight: 800;
 	color: #000000;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+}
+
+.trans-company-list {
+	list-style-type: none;
 }
 
 .trans-company {
-	list-style-type: none;
 	color: inherit;
 }
 
-.link-main {
+.button {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
 	color: #000000;
-	letter-spacing: 2px;
+	letter-spacing: 3.5px;
 	text-transform: uppercase;
+}
 
-	background-color: #e0cd88;
-	background-position: 5px 5px;
+.button-send {
+	background: none;
+	border: 0;
 }
 
 /* Стилизация футера */
@@ -307,7 +307,11 @@ img {
 
 /*Соц кнопки в футере*/
 .social-button {
+	display: inline-block;
+	height: 32px;
 	opacity: 0.3;
+	vertical-align: top;
+	width: 32px;
 }
 
 .social-button:hover,
@@ -319,11 +323,29 @@ img {
 	opacity: 0.1;
 }
 
+.social-button-facebook {
+	background: url(../img/facebook.svg) 0 0 no-repeat;
+}
+
+.social-button-instagram {
+	background: url(../img/instagram.svg) 0 0 no-repeat;
+}
+
+.social-button-twitter {
+	background: url(../img/twitter.svg) 0 0 no-repeat;
+}
+
 /*Кнопка закрытия модального окна*/
 .modal-close {
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	vertical-align: top;
 	opacity: 0.5;
 	background: none;
 	border: 0;
+
+	background: url(../img/modal-close.svg) 0 0 no-repeat;
 }
 
 .modal-close:hover,
@@ -349,52 +371,43 @@ img {
 
 .feedback-input::-webkit-input-placeholder {
 	color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-input:-ms-input-placeholder:focus {
+	color: inherit;
+}
+
+.feedback-input::-ms-input-placeholder:focus {
+	color: inherit;
+}
+
+.feedback-input::-webkit-input-placeholder:focus {
+	color: inherit;
+}
+
+.feedback-input:-ms-input-placeholder:focus{
+	color: inherit;
+}
+
+.feedback-input::-ms-input-placeholder:focus {
+	color: inherit;
+}
+
+.feedback-input {
 	background: rgba(242, 242, 242, 0.5);
+	border: 03px solid transparent;
+
+	padding-top: 22px;
+	padding-left: 22px;
+	padding-bottom: 22px;
 }
 
-.feedback-input:-ms-input-placeholder {
-	color: rgba(70, 70, 70, 0.4);
-	background: rgba(242, 242, 242, 0.5);
+.feedback-input:hover {
+	background: rgba(242, 242, 242, 0.8);
 }
 
-.feedback-input::-ms-input-placeholder {
-	color: rgba(70, 70, 70, 0.4);
-	background: rgba(242, 242, 242, 0.5);
-}
-
-.feedback-input::placeholder {
-	color: rgba(70, 70, 70, 0.4);
-	background: rgba(242, 242, 242, 0.5);
-}
-
-.feedback-input:hover::-webkit-input-placeholder {
-	background: rgba(234, 234, 234, 0.8);
-}
-
-.feedback-input:hover:-ms-input-placeholder {
-	background: rgba(234, 234, 234, 0.8);
-}
-
-.feedback-input:hover::-ms-input-placeholder {
-	background: rgba(234, 234, 234, 0.8);
-}
-
-.feedback-input:hover::placeholder {
-	background: rgba(234, 234, 234, 0.8);
-}
-
-.feedback-input:focus::-webkit-input-placeholder {
-	background: rgba(234, 234, 234, 0.5);
-}
-
-.feedback-input:focus:-ms-input-placeholder {
-	background: rgba(234, 234, 234, 0.5);
-}
-
-.feedback-input:focus::-ms-input-placeholder {
-	background: rgba(234, 234, 234, 0.5);
-}
-
-.feedback-input:focus::placeholder {
-	background: rgba(234, 234, 234, 0.5);
+.feedback-input:focus {
+	outline:0;
+	background: #ffffff;
+	border: 3px solid #f7e296;
 }
