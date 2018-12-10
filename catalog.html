@@ -8,7 +8,7 @@
     </head>
     <body>
         <header class="main-header">
-            <a href="index.html" class="header-logo">Device</a>
+            <a href="index.html" class="logo header-logo">Device</a>
             <form action="https://echo.htmlacademy.ru" method="post">
                 <label for="main-search" class="visually-hidden">Поиск</label>
                 <input type="search" id="main-search" name="search" class="header-search" placeholder="Поиск по сайту">
@@ -163,28 +163,42 @@
             </section>
         </main>
         <footer class="footer-main">
-            <a href="index.html" class="footer-logo">Device</a>
-            <ul class="footer-user-navigation">
-                <li class="login-link footer-login-link"><a href="#">Валентин Петухов</a></li>
-                <li class="login-link footer-login-link get-out"><a href="#">Выход</a></li>
+            <a href="index.html" class="logo footer-logo">Device</a>
+            <ul class="user-navigation footer-user-navigation">
+                <li><a href="#" class="login-link footer-login-link footer-link">Валентин Петухов</a></li>
+                <li><a href="#" class="login-link footer-login-link footer-link">Выход</a></li>
             </ul>
             <ul class="footer-product-manager">
-                <li class="compare-link footer-compare-link"><a href="#">Сравнить</a></li>
-                <li class="cart-link footer-cart-link"><a href="#">Корзина</a></li>
+                <li><a href="#" class="compare-link footer-compare-link footer-link">Сравнить</a></li>
+                <li><a href="#" class="cart-link footer-cart-link footer-link">Корзина</a></li>
             </ul>
-            <p>г. Москва, ул. Строителей, 15</p>
+            <p class="contacts">г. Москва, ул. Строителей, 15</p>
             <ul class="site-navigation footer-site-navigation">
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="guarantee.html">Гарантия</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li class="site-navigation-item footer-navigation"><a href="delivery.html">Доставка</a></li>
+                <li class="site-navigation-item footer-navigation"><a href="guarantee.html">Гарантия</a></li>
+                <li class="site-navigation-item footer-navigation"><a href="contacts.html">Контакты</a></li>
             </ul>
-            <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+            <p><a class="contacts" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
             <ul class="footer-social-list">
-                <li><a href="#" class="social-button">Фейсбук</a></li>
-                <li><a href="#" class="social-button">Инстаграмм</a></li>
-                <li><a href="#" class="social-button">Твиттер</a></li>
+                <li>
+                    <a href="#" class="social-button social-button-facebook">
+                        <span class="visually-hidden">Фейсбук</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button social-button-instagram">
+                        <span class="visually-hidden">Инстаграмм</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button social-button-twitter">
+                        <span class="visually-hidden">Твиттер</span>
+                    </a>
+                </li>
             </ul>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="company-create"><img src="img/logo-html.svg" alt="Логотип Академии HTML" width="26" height="34"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="company-create">
+                <img src="img/logo-html.svg" alt="Логотип Академии HTML" width="26" height="34">
+            </a>
         </footer>
     </body>
 </html>

@@ -324,15 +324,15 @@ img {
 }
 
 .social-button-facebook {
-	background: url(../img/facebook.svg) 0 0 no-repeat;
+	background: url("../img/facebook.svg") 0 0 no-repeat;
 }
 
 .social-button-instagram {
-	background: url(../img/instagram.svg) 0 0 no-repeat;
+	background: url("../img/instagram.svg") 0 0 no-repeat;
 }
 
 .social-button-twitter {
-	background: url(../img/twitter.svg) 0 0 no-repeat;
+	background: url("../img/twitter.svg") 0 0 no-repeat;
 }
 
 /*Кнопка закрытия модального окна*/
@@ -345,7 +345,7 @@ img {
 	background: none;
 	border: 0;
 
-	background: url(../img/modal-close.svg) 0 0 no-repeat;
+	background: url("../img/modal-close.svg") 0 0 no-repeat;
 }
 
 .modal-close:hover,
@@ -369,41 +369,19 @@ img {
 
 }
 
-.feedback-input::-webkit-input-placeholder {
-	color: rgba(70, 70, 70, 0.4);
-}
-
-.feedback-input:-ms-input-placeholder:focus {
-	color: inherit;
-}
-
-.feedback-input::-ms-input-placeholder:focus {
-	color: inherit;
-}
-
-.feedback-input::-webkit-input-placeholder:focus {
-	color: inherit;
-}
-
-.feedback-input:-ms-input-placeholder:focus{
-	color: inherit;
-}
-
-.feedback-input::-ms-input-placeholder:focus {
-	color: inherit;
-}
-
 .feedback-input {
-	background: rgba(242, 242, 242, 0.5);
-	border: 03px solid transparent;
+	font-size: 14px;
+	line-height: 18px;
+	
 
-	padding-top: 22px;
-	padding-left: 22px;
-	padding-bottom: 22px;
+	background: rgba(230, 230, 230, 0.5);
+	border: 3px solid transparent;
+
+	padding: 22px 247px 22px 22px;
 }
 
 .feedback-input:hover {
-	background: rgba(242, 242, 242, 0.8);
+	background: rgba(230, 230, 230, 0.8);
 }
 
 .feedback-input:focus {
@@ -411,3 +389,59 @@ img {
 	background: #ffffff;
 	border: 3px solid #f7e296;
 }
+
+.feedback-input:invalid {
+	outline:0;
+	background: rgba(237,181, 181, 0.5);
+	border: 0px solid #f7e296;
+}
+
+.feedback-input::-webkit-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-input:-ms-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-input::-ms-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-input::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-input:hover::-webkit-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-input:hover:-ms-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-input:hover::-ms-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-input:hover::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-input:focus::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.feedback-input:focus:-ms-input-placeholder {
+  color: inherit;
+}
+
+.feedback-input:focus::-ms-input-placeholder {
+  color: inherit;
+}
+
+.feedback-input:focus::placeholder {
+  color: inherit;
+}
+
+/*Стилизация каталога*/
