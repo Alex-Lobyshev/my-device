@@ -276,7 +276,7 @@ img {
 }
 
 /*Навигация в футере*/
-.footer-navigation a{
+.footer-navigation a {
 	color: #ffffff;
 }
 
@@ -397,51 +397,78 @@ img {
 }
 
 .feedback-input::-webkit-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
+	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input:-ms-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
+	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input::-ms-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
+	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input::placeholder {
-  color: rgba(70, 70, 70, 0.4);
+	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input:hover::-webkit-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
+	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input:hover:-ms-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
+	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input:hover::-ms-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
+	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input:hover::placeholder {
-  color: rgba(70, 70, 70, 0.4);
+	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input:focus::-webkit-input-placeholder {
-  color: inherit;
+	color: inherit;
 }
 
 .feedback-input:focus:-ms-input-placeholder {
-  color: inherit;
+	color: inherit;
 }
 
 .feedback-input:focus::-ms-input-placeholder {
-  color: inherit;
+	color: inherit;
 }
 
 .feedback-input:focus::placeholder {
-  color: inherit;
+	color: inherit;
 }
 
 /*Стилизация каталога*/
+
+.page-title {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+.breadcrumbs {
+	list-style-type: none;
+}
+.breadcrumbs a{
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	color:rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color:rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+	color:rgba(0, 0, 0, 0.1);	
+}
