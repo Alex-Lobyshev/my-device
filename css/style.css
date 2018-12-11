@@ -220,6 +220,7 @@ img {
 
 .trans-company-list {
 	list-style-type: none;
+	padding-left: 0;
 }
 
 .trans-company {
@@ -451,16 +452,18 @@ img {
 	font-size: 47px;
 	line-height: 48px;
 	font-weight: 800;
-	letter-spacing: 1px;
+	color: #000000;
+	letter-spacing: 0.5px;
 }
 
 .breadcrumbs {
 	list-style-type: none;
+	padding-left: 0;
 }
 .breadcrumbs a{
 	font-size: 14px;
 	line-height: 24px;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 	color:rgba(0, 0, 0, 0.3);
 }
 
@@ -471,4 +474,95 @@ img {
 
 .breadcrumbs a:active {
 	color:rgba(0, 0, 0, 0.1);	
+}
+
+.filter {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	color: #000000;
+	letter-spacing: 0.5px;
+}
+
+fieldset {
+	border: none;
+}
+
+.filter-legend {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	color: #000000;
+	letter-spacing: 1px;
+
+	border-top: 2px solid #000000;
+	outline: 0;
+
+	display: inline-block;
+	width: 201px;
+
+}
+
+.filter-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.filter-option {
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 1px;
+	color: #000000;
+
+}
+
+.catalog-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.catalog-item-title {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	color: #000000;
+	letter-spacing: 0.1px;
+
+}
+
+.catalog-price {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	letter-spacing: 0.1px;
+}
+
+.button-compare {
+	font: inherit;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.1px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.button-compare:hover,
+.button-compare:focus {
+	color: #000000;
+}
+
+.button-compare:active {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.button-cart:hover {
+	background: #f0c52e;
+}
+
+.button-cart:active {
+	background: #f0c52e;
+	color: rgba(0, 0, 0, 0.3);
 }
