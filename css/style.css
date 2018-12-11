@@ -87,7 +87,7 @@ img {
 }
 
 .main-header a:hover,
-.main-hrader a:focus {
+.main-header a:focus {
 	color: rgba(0, 0, 0, 0.6);
 }
 
@@ -110,6 +110,7 @@ img {
 	background-color: transparent;
 	outline: 0;
 	border: 0;
+	border-bottom: 2px solid transperent;
 }
 
 .header-search:focus {
@@ -235,11 +236,12 @@ img {
 	color: #000000;
 	letter-spacing: 3.5px;
 	text-transform: uppercase;
-}
-
-.button-send {
 	background: none;
 	border: 0;
+}
+
+.button:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 /* Стилизация футера */
@@ -357,7 +359,6 @@ img {
 
 .modal-close:active {
 	opacity: 0.3;
-	outline: 0;
 }
 
 /*Стили для модального окна формы*/
@@ -373,76 +374,48 @@ img {
 .feedback-input {
 	font-size: 14px;
 	line-height: 18px;
+	font-weight: 400;
 	
 
-	background: rgba(230, 230, 230, 0.5);
+	background: rgba(229, 229, 229, 0.5);
 	border: 3px solid transparent;
 
-	padding: 22px 247px 22px 22px;
+	padding: 22px;
 }
 
 .feedback-input:hover {
-	background: rgba(230, 230, 230, 0.8);
+	background: rgba(229, 229, 229, 0.8);
 }
 
 .feedback-input:focus {
 	outline:0;
 	background: #ffffff;
-	border: 3px solid #f7e296;
+	border: 3px solid rgba(240, 197, 46, 0.5);
 }
 
 .feedback-input:invalid {
-	outline:0;
 	background: rgba(237,181, 181, 0.5);
-	border: 0px solid #f7e296;
+	border: 3px solid transperent;
 }
 
 .feedback-input::-webkit-input-placeholder {
+	font-weight: 400;
 	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input:-ms-input-placeholder {
+	font-weight: 400;
 	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input::-ms-input-placeholder {
+	font-weight: 400;
 	color: rgba(70, 70, 70, 0.4);
 }
 
 .feedback-input::placeholder {
+	font-weight: 400;
 	color: rgba(70, 70, 70, 0.4);
-}
-
-.feedback-input:hover::-webkit-input-placeholder {
-	color: rgba(70, 70, 70, 0.4);
-}
-
-.feedback-input:hover:-ms-input-placeholder {
-	color: rgba(70, 70, 70, 0.4);
-}
-
-.feedback-input:hover::-ms-input-placeholder {
-	color: rgba(70, 70, 70, 0.4);
-}
-
-.feedback-input:hover::placeholder {
-	color: rgba(70, 70, 70, 0.4);
-}
-
-.feedback-input:focus::-webkit-input-placeholder {
-	color: inherit;
-}
-
-.feedback-input:focus:-ms-input-placeholder {
-	color: inherit;
-}
-
-.feedback-input:focus::-ms-input-placeholder {
-	color: inherit;
-}
-
-.feedback-input:focus::placeholder {
-	color: inherit;
 }
 
 /*Стилизация каталога*/
@@ -460,7 +433,8 @@ img {
 	list-style-type: none;
 	padding-left: 0;
 }
-.breadcrumbs a{
+.breadcrumbs a,
+.breadcrumbs-current {
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.5px;
@@ -476,16 +450,7 @@ img {
 	color:rgba(0, 0, 0, 0.1);	
 }
 
-.filter {
-	font-family: "Gilroy", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 800;
-	color: #000000;
-	letter-spacing: 0.5px;
-}
-
-fieldset {
+.filters fieldset {
 	border: none;
 }
 
@@ -495,13 +460,13 @@ fieldset {
 	line-height: 24px;
 	font-weight: 800;
 	color: #000000;
-	letter-spacing: 1px;
+	letter-spacing: 0.1px;
 
 	border-top: 2px solid #000000;
-	outline: 0;
 
 	display: inline-block;
-	width: 201px;
+	vertical-align: top;
+	min-width: 201px;
 
 }
 
@@ -513,7 +478,7 @@ fieldset {
 .filter-option {
 	font-size: 14px;
 	line-height: 40px;
-	letter-spacing: 1px;
+	letter-spacing: 0.1px;
 	color: #000000;
 
 }
@@ -530,7 +495,10 @@ fieldset {
 	font-weight: 800;
 	color: #000000;
 	letter-spacing: 0.1px;
+}
 
+.catalog-item-title a {
+	color: inherit;
 }
 
 .catalog-price {
@@ -542,9 +510,8 @@ fieldset {
 }
 
 .button-compare {
-	font: inherit;
 	font-size: 13px;
-	line-height: 20px;
+	line-height: 36px;
 	letter-spacing: 0.1px;
 	color: rgba(0, 0, 0, 0.5);
 }
@@ -556,13 +523,4 @@ fieldset {
 
 .button-compare:active {
 	color: rgba(0, 0, 0, 0.2);
-}
-
-.button-cart:hover {
-	background: #f0c52e;
-}
-
-.button-cart:active {
-	background: #f0c52e;
-	color: rgba(0, 0, 0, 0.3);
 }

@@ -62,7 +62,7 @@
             <section class="filters">
                 <h2>Фильтр</h2>
                 <form action="https://echo.htmlacademy.ru" method="get" class="catalog-filter">
-                    <fieldset>
+                    <fieldset class="">
                         <legend class="filter-legend">Стоимость</legend>
                         <label for="filter-price" class="viually-hidden">Фильтр цены</label>
                         <input type="range" id="filter-price" name="filter-price" min="0" max="10000">
@@ -120,71 +120,85 @@
                             <h3 class="catalog-item-title">
                                 <a href="catalog-item.html">Любительская селфи палка</a>
                             </h3>
-                            <b>500 руб.</b>
+                            <b class="catalog-price">500 руб.</b>
                         </div>
                         <img src="img/item-1.jpg" alt="Любительская селфи палка" width="360" height="380">
                         <a class="button" href="#">В корзину</a>
-                        <a class="button button-compare" href="#">Добавить к сравнению</a>
+                        <a class="button-compare" href="#">Добавить к сравнению</a>
                     </li>
                     <li class="catalog-item">
                         <div class="item-info">
                             <h3 class="catalog-item-title">
                                 <a href="catalog-item2.html">Профессиональная селфи палка</a>
                             </h3>
-                            <b>1500 руб.</b>
+                            <b class="catalog-price">1500 руб.</b>
                         </div>
                         <img src="img/item-2.jpg" alt="Профессиональная селфи палка" width="360" height="380">
                         <a class="button" href="#">В корзину</a>
-                        <a class="button button-compare" href="#">Добавить к сравнению</a>
+                        <a class="button-compare" href="#">Добавить к сравнению</a>
                     </li>
                     <li class="catalog-item">
                         <div class="item-info">
                             <h3 class="catalog-item-title">
                                 <a href="catalog-item3.html">Непотопляемая селфи палка</a>
                             </h3>
-                            <b>2500 руб.</b>
+                            <b class="catalog-price">2500 руб.</b>
                         </div>
                         <img src="img/item-3.jpg" alt="Непотопляемая селфи палка" width="360" height="380">
                         <a class="button" href="#">В корзину</a>
-                        <a class="button button-compare" href="#">Добавить к сравнению</a>
+                        <a class="button-compare" href="#">Добавить к сравнению</a>
                     </li>
                     <li class="catalog-item catalog-item-new">
                         <div class="item-info">
                             <h3 class="catalog-item-title">
                                 <a href="catalog-item4.html">Селфи-палка «Следуй за мной»</a>
                             </h3>
-                            <b>4900 руб.</b>
+                            <b class="catalog-price">4900 руб.</b>
                         </div>
                         <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
                         <a class="button" href="#">В корзину</a>
-                        <a class="button button-compare" href="#">Добавить к сравнению</a>
+                        <a class="button-compare" href="#">Добавить к сравнению</a>
                     </li>
                 </ul>
             </section>
         </main>
         <footer class="footer-main">
-            <a href="index.html" class="footer-logo">Device</a>
+            <a href="index.html" class="logo footer-logo">Device</a>
             <ul class="footer-user-navigation">
-                <li class="login-link footer-login-link"><a href="#">Валентин Петухов</a></li>
-                <li class="login-link footer-login-link get-out"><a href="#">Выход</a></li>
+                <li><a href="#" class="login-link footer-login-link footer-link">Валентин Петухов</a></li>
+                <li><a href="#" class="login-link footer-login-link footer-link get-out">Выход</a></li>
             </ul>
             <ul class="footer-product-manager">
-                <li class="compare-link footer-compare-link"><a href="#">Сравнить</a></li>
-                <li class="cart-link footer-cart-link"><a href="#">Корзина</a></li>
+                <li><a href="#" class="compare-link footer-compare-link footer-link">Сравнить</a></li>
+                <li><a href="#" class="cart-link footer-cart-link footer-link">Корзина</a></li>
             </ul>
-            <p>г. Москва, ул. Строителей, 15</p>
+            <p class="contacts">г. Москва, ул. Строителей, 15</p>
             <ul class="site-navigation footer-site-navigation">
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="guarantee.html">Гарантия</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li class="site-navigation-item footer-navigation"><a href="delivery.html">Доставка</a></li>
+                <li class="site-navigation-item footer-navigation"><a href="guarantee.html">Гарантия</a></li>
+                <li class="site-navigation-item footer-navigation"><a href="contacts.html">Контакты</a></li>
             </ul>
-            <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+            <p><a class="contacts" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
             <ul class="footer-social-list">
-                <li><a href="#" class="social-button">Фейсбук</a></li>
-                <li><a href="#" class="social-button">Инстаграмм</a></li>
-                <li><a href="#" class="social-button">Твиттер</a></li>
+                <li>
+                    <a href="#" class="social-button social-button-facebook">
+                        <span class="visually-hidden">Фейсбук</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button social-button-instagram">
+                        <span class="visually-hidden">Инстаграмм</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button social-button-twitter">
+                        <span class="visually-hidden">Твиттер</span>
+                    </a>
+                </li>
             </ul>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="company-create"><img src="img/logo-html.svg" alt="Логотип Академии HTML" width="26" height="34"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="company-create">
+                <img src="img/logo-html.svg" alt="Логотип Академии HTML" width="26" height="34">
+            </a>
         </footer>
     </body>
 </html>
