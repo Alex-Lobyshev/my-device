@@ -8,118 +8,134 @@
     </head>
     <body>
         <header class="main-header">
-            <a class="logo header-logo">Device</a>
-            <form action="https://echo.htmlacademy.ru" method="post"  >
-                <label for="main-search" class="visually-hidden">Поиск</label>
-                <input type="search" class="header-search" id="main-search" name="search" placeholder="Поиск по сайту">
-                <button type="submit" class="button-search" href="#">Найти</button>
-            </form>
-            <ul class="user-navigation header-user-navigation">
-                <li><a class="link login-link header-login-link" href="#">Вход</a></li>
-            </ul>
-            <ul class="header-product-manager">
-                <li><a class="compare-link header-compare-link" href="#">Сравнить</a></li>
-                <li><a class="cart-link header-cart-link"href="#">Корзина</a></li>
-            </ul>
-            <nav class="main-navigation">
-                <ul class="site-navigation header-site-navigation">
-                    <li class="site-navigation-item"><a href="catalog-items.html">Каталог товаров</a>
-                        <ul class="inner-menu">
-                            <li>
-                                <ul class="inner-menu first-inner-menu">
-                                    <li><a href="catalog-virtual.html">Виртуальная реальность</a></li>
-                                    <li><a href="catalog.html">Моноподы для селфи</a></li>
-                                    <li><a href="catalog-action-cam.html">Экшн-камер</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="inner-menu second-inner-menu">
-                                    <li><a href="catalog-fitness-bracelet.html">Фитнес браслеты</a></li>
-                                    <li><a href="catalog-smart-clock.html">Умные часы</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="inner-menu third-inner-menu">
-                                    <li><a href="catalog-quadcopter.html">Квадрокоптеры</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="site-navigation-item"><a href="delivery.html">Доставка</a></li>
-                    <li class="site-navigation-item"><a href="guarantee.html">Гарантия</a></li>
-                    <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="wrapper wrapper-2">
+                <a class="logo header-logo">Device</a>
+                <div class="link-for-use">
+                    <form action="https://echo.htmlacademy.ru" method="post"  >
+                        <label for="main-search" class="visually-hidden">Поиск</label>
+                        <input type="search" class="header-search" id="main-search" name="search" placeholder="Поиск по сайту">
+                        <button type="submit" class="button-search" href="#">Найти</button>
+                    </form>
+                    <ul class="user-navigation header-user-navigation">
+                        <li><a class="link login-link header-login-link" href="#">Вход</a></li>
+                    </ul>
+                    <ul class="product-manager header-product-manager">
+                        <li><a class="compare-link header-compare-link" href="#">Сравнить</a></li>
+                        <li><a class="cart-link header-cart-link"href="#">Корзина</a></li>
+                    </ul>
+                </div>
+                <nav class="main-navigation">
+                    <ul class="site-navigation header-site-navigation">
+                        <li class="site-navigation-item"><a href="catalog-items.html">Каталог товаров</a>
+                            <ul class="inner-menu">
+                                <li>
+                                    <ul class="inner-menu first-inner-menu">
+                                        <li><a href="catalog-virtual.html">Виртуальная реальность</a></li>
+                                        <li><a href="catalog.html">Моноподы для селфи</a></li>
+                                        <li><a href="catalog-action-cam.html">Экшн-камер</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="inner-menu second-inner-menu">
+                                        <li><a href="catalog-fitness-bracelet.html">Фитнес браслеты</a></li>
+                                        <li><a href="catalog-smart-clock.html">Умные часы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="inner-menu third-inner-menu">
+                                        <li><a href="catalog-quadcopter.html">Квадрокоптеры</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="site-navigation-item"><a href="delivery.html">Доставка</a></li>
+                        <li class="site-navigation-item"><a href="guarantee.html">Гарантия</a></li>
+                        <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="container">
-            <h1 class="visually-hidden">Интернет-магазин техники и девайсов</h1>
-            <section class="about-us">
-                <h2 class="title-main">О нас</h2>
-                <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                <ul class="trans-company-list">
-                    <li><a class="trans-company" href="#">Деловые Линии</a></li>
-                    <li><a class="trans-company" href="#">Автотрейдинг</a></li>
-                    <li><a class="trans-company" href="#">ЖелДорЭкспедиция</a></li>
-                </ul>
-                <a href="about.html" class="button">Подробнее о нас</a>
-            </section>
-            <section class="contact">
-                <h2 class="title-main">Контакты</h2>
-                <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                <a href="map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта проезда"></a>
-                <a href="contacts.html" class="button">Напишите нам</a>
-            </section>
+            <div class="wrapper contact-us">
+                <h1 class="visually-hidden">Интернет-магазин техники и девайсов</h1>
+                <section class="about-us">
+                    <h2 class="title-main">О нас</h2>
+                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                    <ul class="trans-company-list">
+                        <li><a class="trans-company" href="#">Деловые Линии</a></li>
+                        <li><a class="trans-company" href="#">Автотрейдинг</a></li>
+                        <li><a class="trans-company" href="#">ЖелДорЭкспедиция</a></li>
+                    </ul>
+                    <a href="about.html" class="button">Подробнее о нас</a>
+                </section>
+                <section class="contact">
+                    <h2 class="title-main">Контакты</h2>
+                    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+                    <a href="map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта проезда"></a>
+                    <a href="contacts.html" class="button">Напишите нам</a>
+                </section>
+            </div>
         </main>
         <footer class="footer-main">
-            <a class="logo footer-logo">Device</a>
-            <ul class="user-navigation footer-user-navigation">
-                <li><a href="#" class="login-link footer-login-link footer-link">Вход</a></li>
-            </ul>
-            <ul class="footer-product-manager">
-                <li><a href="#" class="compare-link footer-compare-link footer-link">Сравнить</a></li>
-                <li><a href="#" class="cart-link footer-cart-link footer-link">Корзина</a></li>
-            </ul>
-            <p class="contacts">г. Москва, ул. Строителей, 15</p>
-            <ul class="site-navigation footer-navigation">
-                <li class="site-navigation-item footer-navigation"><a href="delivery.html">Доставка</a></li>
-                <li class="site-navigation-item footer-navigation"><a href="guarantee.html">Гарантия</a></li>
-                <li class="site-navigation-item footer-navigation"><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <p><a class="contacts" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
-            <ul class="footer-social-list">
-                <li>
-                    <a href="#" class="social-button social-button-facebook">
-                        <span class="visually-hidden">Фейсбук</span>
+            <div class="wrapper">
+                <div class="link-for-use">
+                    <a class="logo footer-logo">Device</a>
+                    <ul class="user-navigation footer-user-navigation">
+                        <li><a href="#" class="login-link footer-login-link footer-link">Вход</a></li>
+                    </ul>
+                    <ul class="product-manager footer-product-manager">
+                        <li><a href="#" class="compare-link footer-compare-link footer-link">Сравнить</a></li>
+                        <li><a href="#" class="cart-link footer-cart-link footer-link">Корзина</a></li>
+                    </ul>
+                </div>
+                <div class="link-for-use-2">
+                    <p class="contacts">г. Москва, ул. Строителей, 15</p>
+                    <ul class="site-navigation footer-navigation">
+                        <li class="site-navigation-item footer-navigation"><a href="delivery.html">Доставка</a></li>
+                        <li class="site-navigation-item footer-navigation"><a href="guarantee.html">Гарантия</a></li>
+                        <li class="site-navigation-item footer-navigation"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <p><a class="contacts" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+                </div>
+                <div class="link-for-use-3">
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="#" class="social-button social-button-facebook">
+                                <span class="visually-hidden">Фейсбук</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-button social-button-instagram">
+                                <span class="visually-hidden">Инстаграмм</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-button social-button-twitter">
+                                <span class="visually-hidden">Твиттер</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" class="company-create">
+                        <img src="img/logo-html.svg" alt="Логотип Академии HTML" width="26" height="34">
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="social-button social-button-instagram">
-                        <span class="visually-hidden">Инстаграмм</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-button social-button-twitter">
-                        <span class="visually-hidden">Твиттер</span>
-                    </a>
-                </li>
-            </ul>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="company-create">
-                <img src="img/logo-html.svg" alt="Логотип Академии HTML" width="26" height="34">
-            </a>
+                </div>
+            </div>
         </footer>
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Напишите нам</h2>
             <form action="https://echo.htmlacademy.ru" method="post"  class="feedback">
-                <p class="feedback-name">
-                    <label for="feedback-name">Ваше имя:</label>
-                    <input type="text" id="feedback-name" name="feedback-name" class="feedback-input" placeholder="Имя Фамилия">
-                </p>
-                <p>
-                    <label for="feedback-mail">Ваш e-mail:</label>
-                    <input type="email" id="feedback-mail" name="feedback-mail" class="feedback-input" placeholder="email@example.com">
-                </p>
-                <p>
+                <div class="form-contact">
+                    <p class="feedback-item  feedback-name">
+                        <label for="feedback-name">Ваше имя:</label>
+                        <input type="text" id="feedback-name" name="feedback-name" class="feedback-input" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="feedback-item feedback-mail">
+                        <label for="feedback-mail">Ваш e-mail:</label>
+                        <input type="email" id="feedback-mail" name="feedback-mail" class="feedback-input" placeholder="email@example.com">
+                    </p>
+                </div>
+                <p class="feedback-item feedback-message">
                     <label for="feedback-message">Тект письма: </label>
                     <textarea id="feedback-message" name="feedback-message" class="feedback-input" placeholder="В свободной форме" cols="40" rows="5"></textarea>
                 </p>

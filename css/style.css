@@ -79,9 +79,10 @@ img {
 /*Стили для шапки*/
 
 .main-header {
-	background-color: #f7e296;
+	background: transparent;
 }
 
+.
 .main-header a {
 	color: #000000;
 }
@@ -523,4 +524,100 @@ img {
 
 .button-compare:active {
 	color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*------------------------------------------------------------------------------------*/
+
+.wrapper {
+	min-width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.wrapper-2 {
+	background-color: #f7e296;
+}
+
+.main-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}
+.link-for-use {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product-manager {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.site-navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.contact-us {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-main {
+	display: flex;
+}
+
+.link-for-use-2 {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-for-use-3 {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.feedback	{
+	width: 960px;
+	padding: 0 103px;
+}
+.form-contact	{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.feedback-item	{
+	display: flex;
+    flex-direction: column;
 }
