@@ -76,13 +76,21 @@ img {
 	overflow: hidden;
 }
 
+.wrapper {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
 /*Стили для шапки*/
 
 .main-header {
-	background: transparent;
+	position: relative;
+	background-color: #f7e296;
+	padding: 28px 60px;
+	margin-top: 40px;
 }
 
-.
 .main-header a {
 	color: #000000;
 }
@@ -103,6 +111,12 @@ img {
 	line-height: 48px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+.header-logo {
+	position: absolute;
+    top: -25px;
+    left: 56px;
 }
 
 /*Поиск в шапке сайта*/
@@ -249,11 +263,14 @@ img {
 
 .footer-main {
 	background: #464646;
+	margin-top: 90px;
+	padding: 65px 0;
 }
 
 .footer-logo {
 	color: #ffc600;
 	letter-spacing: 1px;
+	margin-right: auto;
 }
 
 .footer-logo:hover,
@@ -348,6 +365,10 @@ img {
 	opacity: 0.5;
 	background: none;
 	border: 0;
+
+	position: absolute;
+	top: 23px;
+	right: 23px;
 
 	background: url("../img/modal-close.svg") 0 0 no-repeat;
 }
@@ -530,94 +551,139 @@ img {
 
 /*------------------------------------------------------------------------------------*/
 
-.wrapper {
-	min-width: 1160px;
-	margin: 0 auto;
-	padding: 0 20px;
-}
-
-.wrapper-2 {
-	background-color: #f7e296;
-}
-
-.main-header {
+.header-controls {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 40px;
-}
-.link-for-use {
-	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 22px;
 }
 
-.product-manager {
+.header-form {
+	margin-right: 80px;
+}
+
+.product-controls {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+}
+
+.header-cart-link {
+	padding-left: 65px;
 }
 
 .site-navigation {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-start;
 	margin: 0;
 	padding: 0;
 }
 
-.container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+.main-navigation {
+	margin-bottom: 50px;
 }
 
-.contact-us {
+.main-navigation-item:first-child {
+	margin-right: auto;
+	display: block;
+	height: 125px;
+}
+
+.main-navigation-item:first-child:hover .header-inner-menu {
 	display: flex;
-	flex-direction: row;
+	margin-bottom: -170px;
+}
+
+.main-navigation-item:nth-child(3) {
+	padding-right: 106px;
+}
+
+.main-navigation-item:nth-child(2) {
+	padding-right: 35px;
+}
+
+.header-inner-menu {
+	display: none;
+    margin-top: 23px;
+    width: 541px;
+    justify-content: space-between;
+    background: transparent;
+
+
+}
+
+.third-inner-menu {
+	margin-right: -20px;
+}
+
+.company-info {
+	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
 
-.footer-main {
-	display: flex;
+.about-us,
+.contact	{
+	width: 560px;
 }
 
-.link-for-use-2 {
+.about-us	{
+	padding-right: 100px;
+}
+
+.contact	{
+	padding-left: 40px;
+}
+
+.footer-contacts {
 	display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.link-for-use-3 {
+.footer-links {
 	display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.footer-social-list {
+.footer-social-list	{
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	min-width: 160px;
+	padding: 0 10px;
 }
 
-.feedback	{
+.modal-write-us	{
+	display: none;
 	width: 960px;
-	padding: 0 103px;
+	padding: 95px 103px;
+	position: fixed;
+	top: 5%;
+	left: 30%;
+	background: white;
 }
+
+
 .form-contact	{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
 
-.feedback-item	{
-	display: flex;
-    flex-direction: column;
+.feedback-input {
+	display: block;
+	width: 100%;
+}
+
+.feedback-item {
+	width: 360px;
+}
+
+.feedback-message	{
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.modal-map {
+	display: none;
+	position: fixed;
+	left: 30%;
+	bottom: 0px;
 }

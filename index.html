@@ -7,27 +7,26 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="main-header">
-            <div class="wrapper wrapper-2">
-                <a class="logo header-logo">Device</a>
-                <div class="link-for-use">
-                    <form action="https://echo.htmlacademy.ru" method="post"  >
-                        <label for="main-search" class="visually-hidden">Поиск</label>
-                        <input type="search" class="header-search" id="main-search" name="search" placeholder="Поиск по сайту">
-                        <button type="submit" class="button-search" href="#">Найти</button>
-                    </form>
-                    <ul class="user-navigation header-user-navigation">
-                        <li><a class="link login-link header-login-link" href="#">Вход</a></li>
-                    </ul>
-                    <ul class="product-manager header-product-manager">
-                        <li><a class="compare-link header-compare-link" href="#">Сравнить</a></li>
-                        <li><a class="cart-link header-cart-link"href="#">Корзина</a></li>
-                    </ul>
-                </div>
-                <nav class="main-navigation">
-                    <ul class="site-navigation header-site-navigation">
-                        <li class="site-navigation-item"><a href="catalog-items.html">Каталог товаров</a>
-                            <ul class="inner-menu">
+        <header class="main-header wrapper">
+            <a class="logo header-logo">Device</a>
+            <div class="header-controls">
+                <form action="https://echo.htmlacademy.ru" method="post" class="header-form" >
+                    <label for="main-search" class="visually-hidden">Поиск</label>
+                    <input type="search" class="header-search" id="main-search" name="search" placeholder="Поиск посайту">
+                    <button type="submit" class="button-search" href="#">Найти</button>
+                </form>
+                <ul class="user-navigation header-user-navigation">
+                    <li><a class="link login-link header-login-link" href="#">Войти</a></li>
+                </ul>
+                <ul class="product-controls header-product-manager">
+                    <li><a class="compare-link header-compare-link" href="#">Сравнить</a></li>
+                    <li><a class="cart-link header-cart-link"href="#">Корзина</a></li>
+                </ul>
+            </div>
+            <nav class="main-navigation">
+                <ul class="site-navigation header-site-navigation">
+                    <li class="site-navigation-item main-navigation-item"><a href="catalog-items.html">Каталог товаров</a>
+                            <ul class="inner-menu header-inner-menu">
                                 <li>
                                     <ul class="inner-menu first-inner-menu">
                                         <li><a href="catalog-virtual.html">Виртуальная реальность</a></li>
@@ -47,17 +46,16 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="site-navigation-item"><a href="delivery.html">Доставка</a></li>
-                        <li class="site-navigation-item"><a href="guarantee.html">Гарантия</a></li>
-                        <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    </li>
+                    <li class="site-navigation-item main-navigation-item"><a href="delivery.html">Доставка</a></li>
+                    <li class="site-navigation-item main-navigation-item"><a href="guarantee.html">Гарантия</a></li>
+                    <li class="site-navigation-item main-navigation-item"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
         </header>
-        <main class="container">
-            <div class="wrapper contact-us">
-                <h1 class="visually-hidden">Интернет-магазин техники и девайсов</h1>
+        <main>
+            <h1 class="visually-hidden">Интернет-магазин техники и девайсов</h1>
+            <div class="wrapper company-info">
                 <section class="about-us">
                     <h2 class="title-main">О нас</h2>
                     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -79,17 +77,17 @@
         </main>
         <footer class="footer-main">
             <div class="wrapper">
-                <div class="link-for-use">
+                <div class="header-controls">
                     <a class="logo footer-logo">Device</a>
                     <ul class="user-navigation footer-user-navigation">
                         <li><a href="#" class="login-link footer-login-link footer-link">Вход</a></li>
                     </ul>
-                    <ul class="product-manager footer-product-manager">
+                    <ul class="product-controls footer-product-manager">
                         <li><a href="#" class="compare-link footer-compare-link footer-link">Сравнить</a></li>
                         <li><a href="#" class="cart-link footer-cart-link footer-link">Корзина</a></li>
                     </ul>
                 </div>
-                <div class="link-for-use-2">
+                <div class="footer-contacts">
                     <p class="contacts">г. Москва, ул. Строителей, 15</p>
                     <ul class="site-navigation footer-navigation">
                         <li class="site-navigation-item footer-navigation"><a href="delivery.html">Доставка</a></li>
@@ -98,7 +96,7 @@
                     </ul>
                     <p><a class="contacts" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
                 </div>
-                <div class="link-for-use-3">
+                <div class="footer-links">
                     <ul class="footer-social-list">
                         <li>
                             <a href="#" class="social-button social-button-facebook">
@@ -156,3 +154,8 @@
         </section>
     </body>
 </html>
+
+
+
+
+6) у .site-navigation тоже убрать flex-direction row  + через nth-child можно первому site-navigation-item задать margin-right: auto а для других там где необходимо токлько margin конкретный уже
