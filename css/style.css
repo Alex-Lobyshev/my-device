@@ -53,8 +53,6 @@ body {
 	line-height: 30px;
 	font-weight: 300;
 	color: #464646;
-
-	
 }
 
 a {
@@ -77,7 +75,7 @@ img {
 }
 
 .wrapper {
-	max-width: 1160px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -88,7 +86,11 @@ img {
 	position: relative;
 	background-color: #f7e296;
 	padding: 28px 60px;
+	max-width: 1160px;
+	margin: 0 auto;
 	margin-top: 40px;
+	min-height: 298px;
+    margin-bottom: 1493px; /*временно чтобы расставить как на макете */
 }
 
 .main-header a {
@@ -102,6 +104,13 @@ img {
 
 .main-header a:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 22px;
 }
 
 .logo {
@@ -134,18 +143,22 @@ img {
 
 .header-search::-webkit-input-placeholder {
 	color: rgba(0, 0, 0, 0.3);
+	padding-left: 36px;
 }
 
 .header-search:-ms-input-placeholder {
 	color: rgba(0, 0, 0, 0.3);
+	padding-left: 36px;
 }
 
 .header-search::-ms-input-placeholder {
 	color: rgba(0, 0, 0, 0.3);
+	padding-left: 36px;
 }
 
 .header-search::placeholder {
 	color: rgba(0, 0, 0, 0.3);
+	padding-left: 36px;
 }
 
 .header-search:hover::-webkit-input-placeholder {
@@ -232,15 +245,22 @@ img {
 	font-weight: 800;
 	color: #000000;
 	letter-spacing: 1px;
+	margin-left: -3px;
 }
 
 .trans-company-list {
 	list-style-type: none;
 	padding-left: 0;
+	margin-top: 66px;
+    margin-left: 37px;
 }
 
 .trans-company {
-	color: inherit;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 800;
+	color: #000000;
 }
 
 .button {
@@ -253,6 +273,14 @@ img {
 	text-transform: uppercase;
 	background: none;
 	border: 0;
+	padding: 0 24px;
+	display: block;
+	margin-top: 62px;
+}
+
+.contact-button	{
+	padding: 0 40px;
+	margin-top: 68px;
 }
 
 .button:active {
@@ -264,12 +292,15 @@ img {
 .footer-main {
 	background: #464646;
 	margin-top: 90px;
-	padding: 65px 0;
+	padding: 54px 0;
+}
+
+.footer-controls	{
+	margin-bottom: 0;
 }
 
 .footer-logo {
 	color: #ffc600;
-	letter-spacing: 1px;
 	margin-right: auto;
 }
 
@@ -308,6 +339,14 @@ img {
 
 .footer-navigation a:active {
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-navigation-item {
+	margin-right: 40px;
+}
+
+.footer-navigation-item:last-child	{
+	margin-right: 0;
 }
 
 /*Логотип академии в футере*/
@@ -551,12 +590,7 @@ img {
 
 /*------------------------------------------------------------------------------------*/
 
-.header-controls {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 22px;
-}
+
 
 .header-form {
 	margin-right: 80px;
@@ -567,7 +601,7 @@ img {
 }
 
 .header-cart-link {
-	padding-left: 65px;
+	margin-left: 65px;
 }
 
 .site-navigation {
@@ -583,8 +617,6 @@ img {
 
 .main-navigation-item:first-child {
 	margin-right: auto;
-	display: block;
-	height: 125px;
 }
 
 .main-navigation-item:first-child:hover .header-inner-menu {
@@ -593,26 +625,31 @@ img {
 }
 
 .main-navigation-item:nth-child(3) {
-	padding-right: 106px;
+	margin-right: 109px;
 }
 
 .main-navigation-item:nth-child(2) {
-	padding-right: 35px;
+	margin-right: 35px;
+}
+
+.main-navigation-item:last-child {
+	margin-right: -3px;
 }
 
 .header-inner-menu {
+	position: absolute;
 	display: none;
-    margin-top: 23px;
-    width: 541px;
-    justify-content: space-between;
-    background: transparent;
-
-
+    padding-top: 23px;
+    min-height: 125px;
+    max-width: 1040px;
+    flex-wrap: wrap;
 }
 
-.third-inner-menu {
-	margin-right: -20px;
+.header-inner-menu li {
+	margin-right: 35px;
 }
+
+
 
 .company-info {
 	display: flex;
@@ -625,11 +662,23 @@ img {
 }
 
 .about-us	{
-	padding-right: 100px;
+	padding-right: 88px;
 }
 
-.contact	{
-	padding-left: 40px;
+.about-us-text {
+	font: inherit;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+/*вот тут странное сочетание получилось не уверен что верное*/
+.about-us-text:nth-child(2) {
+	margin-top: 43px;
+	letter-spacing: 0.1px;
+}
+
+.contact-text	{
+	margin-bottom: 38px;
 }
 
 .footer-contacts {
@@ -642,23 +691,28 @@ img {
 	display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 43px;
 }
 
 .footer-social-list	{
 	display: flex;
 	justify-content: space-between;
 	min-width: 160px;
-	padding: 0 10px;
+	margin: 0 auto;	
+}
+
+.modal {
+	display: none;
+	background: #ffffff;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .modal-write-us	{
-	display: none;
 	width: 960px;
-	padding: 95px 103px;
-	position: fixed;
-	top: 5%;
-	left: 30%;
-	background: white;
+	padding: 95px 103px;	
 }
 
 
@@ -679,11 +733,4 @@ img {
 .feedback-message	{
 	margin-bottom: 50px;
 	width: 100%;
-}
-
-.modal-map {
-	display: none;
-	position: fixed;
-	left: 30%;
-	bottom: 0px;
 }

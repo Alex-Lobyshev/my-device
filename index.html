@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="main-header wrapper">
+        <header class="main-header">
             <a class="logo header-logo">Device</a>
             <div class="header-controls">
                 <form action="https://echo.htmlacademy.ru" method="post" class="header-form" >
                     <label for="main-search" class="visually-hidden">Поиск</label>
-                    <input type="search" class="header-search" id="main-search" name="search" placeholder="Поиск посайту">
+                    <input type="search" class="header-search" id="main-search" name="search" placeholder="Поиск по сайту">
                     <button type="submit" class="button-search" href="#">Найти</button>
                 </form>
                 <ul class="user-navigation header-user-navigation">
@@ -58,8 +58,8 @@
             <div class="wrapper company-info">
                 <section class="about-us">
                     <h2 class="title-main">О нас</h2>
-                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                    <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                    <p class="about-us-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
                     <ul class="trans-company-list">
                         <li><a class="trans-company" href="#">Деловые Линии</a></li>
                         <li><a class="trans-company" href="#">Автотрейдинг</a></li>
@@ -69,15 +69,15 @@
                 </section>
                 <section class="contact">
                     <h2 class="title-main">Контакты</h2>
-                    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+                    <p class="about-us-text contact-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <a href="map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта проезда"></a>
-                    <a href="contacts.html" class="button">Напишите нам</a>
+                    <a href="contacts.html" class="button contact-button">Напишите нам</a>
                 </section>
             </div>
         </main>
         <footer class="footer-main">
             <div class="wrapper">
-                <div class="header-controls">
+                <div class="header-controls footer-controls">
                     <a class="logo footer-logo">Device</a>
                     <ul class="user-navigation footer-user-navigation">
                         <li><a href="#" class="login-link footer-login-link footer-link">Вход</a></li>
@@ -90,9 +90,9 @@
                 <div class="footer-contacts">
                     <p class="contacts">г. Москва, ул. Строителей, 15</p>
                     <ul class="site-navigation footer-navigation">
-                        <li class="site-navigation-item footer-navigation"><a href="delivery.html">Доставка</a></li>
-                        <li class="site-navigation-item footer-navigation"><a href="guarantee.html">Гарантия</a></li>
-                        <li class="site-navigation-item footer-navigation"><a href="contacts.html">Контакты</a></li>
+                        <li class="site-navigation-item footer-navigation-item"><a href="delivery.html">Доставка</a></li>
+                        <li class="site-navigation-item footer-navigation-item"><a href="guarantee.html">Гарантия</a></li>
+                        <li class="site-navigation-item footer-navigation-item"><a href="contacts.html">Контакты</a></li>
                     </ul>
                     <p><a class="contacts" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
                 </div>
@@ -143,7 +143,7 @@
                 <span class="visually-hidden">Закрыть</span>
             </button>
         </section>
-        <section class="modal-map">
+        <section class="modal modal-map">
             <h2 class="visually-hidden">Как к нам добраться</h2>
             <p>
                 <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Москва">
@@ -155,7 +155,23 @@
     </body>
 </html>
 
+<!--
+Вот эти моменты я не понял
+6) .main-navigation-item:first-child:hover .header-inner-menu  - во первых этот стиль должен идти после стилей header-inner-menu, потом margin отрицательный здесь не пригодится, у тебя элемент будет споционирован абсолютом селектор тоже тут лучше поменять - показывать меню при наведении на ссылку а не на li , для этого в разметке добавь класс для ссылки 'каталог товаров' и селектор у тебя примерно такой будет .ссылка:hover + .header-inner-menu, header-inner-menu:hover { display: flex } - второй селектор через запятую header-inner-menu:hover (нужен для того чтобы при наведении и на сам элемент он не исчезал)
 
 
 
-6) у .site-navigation тоже убрать flex-direction row  + через nth-child можно первому site-navigation-item задать margin-right: auto а для других там где необходимо токлько margin конкретный уже
+
+
+
+
+7) .third-inner-menu {
+  margin-right: -20px;
+ } - этот селектор неправильный и он здесь не нужен. можно одинаковый margin-right и min-width для всех задать, а для first-child переопределить min-width (он пошире чем второй и третий ряд)
+
+ Вопросы от меня:
+
+ 1. Шрифты по всему сайту при подгонке через пиксель перфект сильно отличаются, где то написание не такое. где то letter-spacing необходим хотя в макете стоит значене 0 у letter-spacing
+
+ 2. За счет чего сдвигать в футере вот такие моменты https://yadi.sk/i/DeoWLGisyrmp-w
+-->
