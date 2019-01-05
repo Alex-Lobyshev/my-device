@@ -57,7 +57,7 @@
             <h1 class="visually-hidden">Интернет-магазин техники и девайсов</h1>
             <div class="wrapper company-info">
                 <section class="about-us">
-                    <h2 class="title-main">О нас</h2>
+                    <h2 class="block-title">О нас</h2>
                     <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                     <p class="about-us-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
                     <ul class="trans-company-list">
@@ -68,7 +68,7 @@
                     <a href="about.html" class="button">Подробнее о нас</a>
                 </section>
                 <section class="contact">
-                    <h2 class="title-main">Контакты</h2>
+                    <h2 class="block-title">Контакты</h2>
                     <p class="about-us-text contact-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <a href="map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта проезда"></a>
                     <a href="contacts.html" class="button contact-button">Напишите нам</a>
@@ -155,23 +155,9 @@
     </body>
 </html>
 
-<!--
-Вот эти моменты я не понял
-6) .main-navigation-item:first-child:hover .header-inner-menu  - во первых этот стиль должен идти после стилей header-inner-menu, потом margin отрицательный здесь не пригодится, у тебя элемент будет споционирован абсолютом селектор тоже тут лучше поменять - показывать меню при наведении на ссылку а не на li , для этого в разметке добавь класс для ссылки 'каталог товаров' и селектор у тебя примерно такой будет .ссылка:hover + .header-inner-menu, header-inner-menu:hover { display: flex } - второй селектор через запятую header-inner-menu:hover (нужен для того чтобы при наведении и на сам элемент он не исчезал)
 
 
+<!---
+1. Выпадающее меню в каталоге товаров стоит ли переделать с помощью margin: auto  и flex-shrink / flex-grow ?
 
-
-
-
-
-7) .third-inner-menu {
-  margin-right: -20px;
- } - этот селектор неправильный и он здесь не нужен. можно одинаковый margin-right и min-width для всех задать, а для first-child переопределить min-width (он пошире чем второй и третий ряд)
-
- Вопросы от меня:
-
- 1. Шрифты по всему сайту при подгонке через пиксель перфект сильно отличаются, где то написание не такое. где то letter-spacing необходим хотя в макете стоит значене 0 у letter-spacing
-
- 2. За счет чего сдвигать в футере вот такие моменты https://yadi.sk/i/DeoWLGisyrmp-w
 -->
