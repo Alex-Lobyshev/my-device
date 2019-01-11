@@ -123,8 +123,8 @@ img {
 
 .header-logo {
 	position: absolute;
-    top: -25px;
-    left: 56px;
+	top: -25px;
+	left: 56px;
 }
 
 /*Поиск в шапке сайта*/
@@ -249,7 +249,7 @@ img {
 	list-style-type: none;
 	padding-left: 0;
 	margin-top: 66px;
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .trans-company {
@@ -356,7 +356,7 @@ img {
 	opacity: 0.3;
 }
 
-/*Тtлефон и адрес в футере*/
+/*Телефон и адрес в футере*/
 .contacts {
 	color: #ffffff;
 }
@@ -632,10 +632,10 @@ img {
 .header-inner-menu {
 	position: absolute;
 	display: none;
-    padding-top: 23px;
-    min-height: 125px;
-    max-width: 1040px;
-    flex-wrap: wrap;
+	padding-top: 23px;
+	min-height: 125px;
+	max-width: 1040px;
+	flex-wrap: wrap;
 }
 
 .header-inner-menu li {
@@ -843,7 +843,7 @@ img {
 }
 
 .filter-button {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 /*--------------header-user-navigation--------------------------------*/
 /*----------------------------------------------*/
