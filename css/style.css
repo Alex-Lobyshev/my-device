@@ -3,8 +3,8 @@
 	font-style: normal;
 	font-weight: 800;
 	src: local("Gilroy ExtraBold"),
-         url("../fonts/gilroyextrabold.woff2") format("woff2"),
-         url("../fonts/gilroyextrabold.woff") format("woff");
+		url("../fonts/gilroyextrabold.woff2") format("woff2"),
+		url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
 	font-style: normal;
 	font-weight: 300;
 	src: local("Gilroy Light"),
-         url("../fonts/gilroylight.woff2") format("woff2"),
-         url("../fonts/gilroylight.woff") format("woff");
+		url("../fonts/gilroylight.woff2") format("woff2"),
+		url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
@@ -21,8 +21,8 @@
 	font-style: normal;
 	font-weight: 400;
 	src: local("Open Sans"),
-         url("../fonts/opensans.woff2") format("woff2"),
-         url("../fonts/opensans.woff") format("woff");
+		url("../fonts/opensans.woff2") format("woff2"),
+		url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
@@ -30,8 +30,8 @@
 	font-style: normal;
 	font-weight: 300;
 	src: local("Open Sans Light"),
-         url("../fonts/opensanslight.woff2") format("woff2"),
-         url("../fonts/opensanslight.woff") format("woff");
+		url("../fonts/opensanslight.woff2") format("woff2"),
+		url("../fonts/opensanslight.woff") format("woff");
 }
 
 html {
@@ -143,22 +143,18 @@ img {
 
 .header-search::-webkit-input-placeholder {
 	color: rgba(0, 0, 0, 0.3);
-	
 }
 
 .header-search:-ms-input-placeholder {
 	color: rgba(0, 0, 0, 0.3);
-	
 }
 
 .header-search::-ms-input-placeholder {
 	color: rgba(0, 0, 0, 0.3);
-	
 }
 
 .header-search::placeholder {
 	color: rgba(0, 0, 0, 0.3);
-	
 }
 
 .header-search:hover::-webkit-input-placeholder {
@@ -197,7 +193,7 @@ img {
 	color: #000000;
 	font-weight: 300;
 	letter-spacing: 0.1px;
-	padding: 13px 20px;
+	padding: 8px 20px;
 	margin-left: 0;
 
 	background-color: transparent;
@@ -236,7 +232,6 @@ img {
 .inner-menu a {
 	line-height: 36px;
 }
-
 
 /*Разметка основного контента */
 
@@ -281,7 +276,7 @@ img {
 	text-align: center;
 }
 
-.contact-button	{
+.contact-button {
 	padding: 0 40px;
 }
 
@@ -297,7 +292,7 @@ img {
 	padding: 54px 0;
 }
 
-.footer-controls	{
+.footer-controls {
 	margin-bottom: 0;
 }
 
@@ -317,7 +312,7 @@ img {
 
 /*Навигация user в футере*/
 .footer-link {
-	color: rgba(255, 255,255, 0.7);
+	color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-link:hover,
@@ -326,7 +321,7 @@ img {
 }
 
 .footer-link:active {
-	color: rgba(255, 255,255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 }
 
 /*Навигация в футере*/
@@ -365,7 +360,6 @@ img {
 .contacts {
 	color: #ffffff;
 }
-
 
 /*Соц кнопки в футере*/
 .social-button {
@@ -431,7 +425,6 @@ img {
 	line-height: 24px;
 	color: #000000;
 	font-weight: 800;
-
 }
 
 .feedback-input {
@@ -439,7 +432,6 @@ img {
 	line-height: 18px;
 	font-weight: 400;
 	
-
 	background: rgba(229, 229, 229, 0.5);
 	border: 3px solid transparent;
 
@@ -457,7 +449,7 @@ img {
 }
 
 .feedback-input:invalid {
-	background: rgba(237,181, 181, 0.5);
+	background: rgba(237, 181, 181, 0.5);
 	border: 3px solid transperent;
 }
 
@@ -483,19 +475,11 @@ img {
 
 /*Стилизация каталога*/
 
-.page-title {
-	font-family: "Gilroy", Arial, sans-serif;
-	font-size: 47px;
-	line-height: 48px;
-	font-weight: 800;
-	color: #000000;
-	letter-spacing: 0.5px;
-}
-
 .breadcrumbs {
 	list-style-type: none;
 	padding-left: 0;
 }
+
 .breadcrumbs a,
 .breadcrumbs-current {
 	font-size: 14px;
@@ -511,6 +495,18 @@ img {
 
 .breadcrumbs a:active {
 	color:rgba(0, 0, 0, 0.1);	
+}
+
+.breadcrumbs {
+	display: flex;
+}
+
+.breadcrumbs li {
+	margin: 0 10px;
+}
+
+.breadcrumbs li:first-child {
+	margin-left: 0;
 }
 
 .filters-element fieldset {
@@ -530,7 +526,6 @@ img {
 	display: inline-block;
 	vertical-align: top;
 	min-width: 201px;
-
 }
 
 .filter-list {
@@ -543,7 +538,6 @@ img {
 	line-height: 40px;
 	letter-spacing: 0.1px;
 	color: #000000;
-
 }
 
 .catalog-list {
@@ -590,17 +584,13 @@ img {
 	color: rgba(0, 0, 0, 0.2);
 }
 
-
-
 /*------------------------------------------------------------------------------------*/
-
-
 
 .header-form {
 	display: flex;
 }
 
-.header-user-navigation	{
+.header-user-navigation {
 	display: flex;
 }
 
@@ -631,8 +621,6 @@ img {
 	display: flex;
 }
 
-
-
 .main-navigation-item:nth-child(2) {
 	margin-right: 35px;
 }
@@ -654,19 +642,17 @@ img {
 	margin-right: 35px;
 }
 
-
-
 .company-info {
 	display: flex;
 	justify-content: space-between;
 }
 
 .about-us,
-.contact	{
+.contact {
 	width: 560px;
 }
 
-.about-us	{
+.about-us {
 	padding-right: 88px;
 }
 
@@ -675,7 +661,7 @@ img {
 	margin-bottom: 15px; /*от одного блока до другого*/
 }
 
-.contact-text	{
+.contact-text {
 	margin-bottom: 38px;
 }
 
@@ -687,12 +673,12 @@ img {
 
 .footer-links {
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 43px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 43px;
 }
 
-.footer-social-list	{
+.footer-social-list {
 	display: flex;
 	justify-content: space-between;
 	min-width: 160px;
@@ -708,13 +694,12 @@ img {
 	transform: translate(-50%, -50%);
 }
 
-.modal-write-us	{
+.modal-write-us {
 	width: 960px;
 	padding: 95px 103px;	
 }
 
-
-.form-contact	{
+.form-contact {
 	display: flex;
 	justify-content: space-between;
 }
@@ -728,50 +713,29 @@ img {
 	width: 360px;
 }
 
-.feedback-message	{
+.feedback-message {
 	margin-bottom: 50px;
 	width: 100%;
 }
 
 /*-----------------------Страница каталога-----------------------*/
 
-.page-title	{
+.page-title {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 47px;
 	line-height: 48px;
 	font-weight: 800;
+	color: #000000;
 	letter-spacing: 0.5px;
 
-	display: flex;
-	align-items:flex-end;
-	flex-wrap: wrap;
 	margin-top: 44px;
 	margin-bottom: 40px;
 }
 
-.breadcrumbs {
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-end;
-}
-
-
-
-.breadcrumbs li{
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.5px;
-	color: #d1d1d1;
-	margin: 0 10px;
-}
-
-.breadcrumbs li:first-child {
-	margin-left: 0;
-}
-
-.content-shift	{
+.content-shift {
 	padding-left: 65px;
 }
+
 /*----------------------------------------------*/
 .catalog-item {
 	display: flex;
@@ -784,8 +748,7 @@ img {
 	margin-right: 0;
 }
 
-
-.catalog-list	{
+.catalog-list {
 	margin: 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -793,7 +756,7 @@ img {
 	padding-top: 70px;
 }
 
-.item-info	{
+.item-info {
 	display: flex;
 	justify-content: space-between;
 	order:1;
@@ -805,7 +768,7 @@ img {
 	justify-content: flex-start;	
 }
 
-.main-block h2	{
+.main-block h2 {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -815,19 +778,20 @@ img {
 	margin: 0;
 	padding: 18px 0;
 }	
+
 .filter	{
 	position: relative;
 	margin-top: 52px;
 }
 
-.filter-left	{
+.filter-left {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	background-color: #eeeeee;
 }
 
-.filter-top{
+.filter-top {
 	position: absolute;
 	width: 100%;
 	height: 70px;
@@ -835,7 +799,7 @@ img {
 	z-index:-1;
 }
 
-.filter-items	{
+.filter-items {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -849,43 +813,39 @@ img {
 	margin-right: 99px;
 }
 
-.filter-options	{
+.filter-options {
 	display: flex;
 	list-style-type: none;
 }
+
 .filter-option {
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
-	color: rgba(0,0,0,0.3);
+	color: rgba(0, 0, 0, 0.3);
 	margin-right: 30px;
 }
 
-.filter-option:last-child	{
+.filter-option:last-child {
 	margin-right: 0;
 }
 
 .filter-option:hover {
-	color: rgba(0,0,0,0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .filter-option:active {
-	color: rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 1);
 }
 
-
-.filter-option-current	{
-	color: rgba(0,0,0,1);
+.filter-option-current {
+	color: rgba(0, 0, 0, 1);
 }
 
 .filter-button {
     margin: 0 auto;
 }
 /*--------------header-user-navigation--------------------------------*/
-
-
-
-/*----------------------------------------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
