@@ -675,7 +675,7 @@ img {
 	content: "";
 	position: absolute;
 	right: 0;
-	top:0;
+	bottom:0;
 	z-index: -1;
 	height: 100%;
 	width: 100vw;
@@ -705,6 +705,8 @@ img {
 	display: inline-block;
 	vertical-align: top;
 	min-width: 201px;
+	padding-top: 16px;
+	margin-bottom: 30px;
 }
 
 .filter-option {
@@ -714,9 +716,39 @@ img {
 	color: #000000;
 }
 
+.price-range {
+	margin-top: -12px;
+	margin-bottom: 29px;
+}
+
+.filter-item {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.filter-item li {
+	margin-left: 40px;
+	margin-bottom: 10px;
+	position: relative;
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.1px;
+	color: #000000;
+}
+
+.filter-color li:last-child {
+	margin-bottom: 26px;
+}
+
+.filter-bluetoth li:last-child {
+	margin-bottom: 42px;
+}
+
+/*---------------------------------------*/
 .catalog-list {
 	list-style-type: none;
-	padding-left: 0;
+	padding-left: 70px;
 }
 
 .catalog-item-title {
@@ -758,7 +790,50 @@ img {
 	color: rgba(0, 0, 0, 0.2);
 }
 
+.manager-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	margin-top: 8%;
+	left: 46%;
+	background-color: #eeeeee;
+}
+
+.catalog-item img:hover + .manager-item {
+	display: flex;
+
+}
+
+.manager-item:hover {
+	display: flex;
+}
 /*------------------------------------------------------------------------------------*/
+.footer-contacts {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 43px;
+}
+
+.footer-social-list {
+	display: flex;
+	justify-content: space-between;
+	min-width: 160px;
+	margin: 0 auto;	
+}
+
+.footer-compare-link,
+.get-out {
+	margin-right: 63px;
+}
+/*--------------------------------*/
 
 .header-form {
 	display: flex;
@@ -844,25 +919,7 @@ img {
 	margin-bottom: 38px;
 }
 
-.footer-contacts {
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.footer-links {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 43px;
-}
-
-.footer-social-list {
-	display: flex;
-	justify-content: space-between;
-	min-width: 160px;
-	margin: 0 auto;	
-}
 
 .modal {
 	display: none;
