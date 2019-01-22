@@ -24,10 +24,10 @@
                     <li><a class="cart-link header-cart-link" href="#">Корзина</a></li>
                 </ul>
             </div>
-            <nav class="main-navigation">
+            <nav class="main-navigation main-navigation-catalog">
                 <ul class="site-navigation header-site-navigation">
                     <li class="site-navigation-item main-navigation-item"><a href="catalog-items.html">Каталог товаров</a>
-                        <ul class="inner-menu header-inner-menu">
+                        <ul class="inner-menu header-inner-menu header-inner-menu_catalog">
                             <li>
                                 <ul class="inner-menu first-inner-menu">
                                     <li><a href="catalog-virtual.html">Виртуальная реальность</a></li>
@@ -65,22 +65,22 @@
             </div>
             <div class="catalog-block">
                 <div class="wrapper">
-                    <div class="filter">
+                    <div class="catalog-header">
                         <div class="filter-title">
                             <h2>Фильтр:</h2>
                         </div>
                         <div class="filter-items">
                             <h2>Сортировка:</h2>
                             <ul class="filter-options">
-                                <li class="filter-options-items filter-option-item_current">По цене</li>
-                                <li class="filter-options-items">По типу</li>
-                                <li class="filter-options-items">По популярности</li>
+                                <li class="filter-options-items filter-option-item_current"><a href="by-price">По цене</a></li>
+                                <li class="filter-options-items"><a href="by-type">По типу</a></li>
+                                <li class="filter-options-items"><a href="by-popular">По популярности</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="catalog-main">
-                        <div class="filter-list">
-                            <section class="filters-element">
+                        <div class="filters-element">
+                    
                                 <form action="https://echo.htmlacademy.ru" method="get" class="catalog-filter">
                                     <fieldset>
                                         <legend class="filter-legend">Стоимость</legend>
@@ -92,46 +92,45 @@
                                         </p>
                                     </fieldset>
                                     <fieldset>
-                                        <legend class="filter-legend">Цвет</legend>
+                                        <legend class="filter-legend filter-legend_color">Цвет</legend>
                                         <ul class="filter-item filter-color">
                                             <li class="filter-option">
                                                 <input type="checkbox" id="color-black" name="black" class="visually-hidden filter-input filter-input-checkbox" checked>
-                                                <label for="color-black">Черный</label>
+                                                <label for="color-black"><a href="black">Черный</a></label>
                                             </li>
                                             <li class="filter-option">
                                                 <input type="checkbox" id="color-white" name="white" class="visually-hidden filter-input filter-input-checkbox">
-                                                <label for="color-white">Белый</label>
+                                                <label for="color-white"><a href="white">Белый</a></label>
                                             </li>
                                             <li class="filter-option">
                                                 <input type="checkbox" id="color-blue" name="blue" class="visually-hidden filter-input filter-input-checkbox" checked>
-                                                <label for="color-blue">Синий</label>
+                                                <label for="color-blue"><a href="blue">Синий</a></label>
                                             </li>
                                             <li class="filter-option">
                                                 <input type="checkbox" id="color-red" name="red" class="visually-hidden filter-input filter-input-checkbox" checked>
-                                                <label for="color-red">Красный</label>
+                                                <label for="color-red"><a href="red">Красный</a></label>
                                             </li>
                                             <li class="filter-option">
                                                 <input type="checkbox" id="color-pink" name="pink" class="visually-hidden filter-input filter-input-checkbox">
-                                                <label for="color-pink">Розовый</label>
+                                                <label for="color-pink"><a href="pink">Розовый</a></label>
                                             </li>
                                         </ul>
                                     </fieldset>
                                     <fieldset>
-                                        <legend class="filter-legend">Bluetooth</legend>
-                                        <ul  class="filter-item filter-bluetoth">
+                                        <legend class="filter-legend filter-legend_bluetooth">Bluetooth</legend>
+                                        <ul  class="filter-item filter-bluetooth">
                                             <li class="filter-option">
                                                 <input type="radio" id="filter-bluetooth-yes" name="filter-bluetooth" value="yes" class="visually-hidden filter-input filter-input-radio">
-                                                <label for="filter-bluetooth-yes">Есть</label>
+                                                <label for="filter-bluetooth-yes"><a href="bluetooth-yes">Есть</a></label>
                                             </li>
                                             <li class="filter-option">
                                                 <input type="radio" id="filter-bluetooth-no" name="filter-bluetooth" value="no" class="visually-hidden filter-input filter-input-radio">
-                                                <label for="filter-bluetooth-no">Нет</label>
+                                                <label for="filter-bluetooth-no"><a href="bluetooth-no">Нет</a></label>
                                             </li>
                                         </ul>
                                     </fieldset>
                                     <button type="submit" class="button filter-button">Показать</button>
                                 </form>
-                            </section>
                         </div>
                         <section class="catalog">
                             <h2 class="visually-hidden">Список селфи-палок</h2>
@@ -139,7 +138,7 @@
                                 <li class="catalog-item">
                                     <div class="item-info">
                                         <h3 class="catalog-item-title">
-                                            <a href="catalog-item.html">Любительская селфи палка</a>
+                                            <a href="catalog-item.html">Любительская селфи-палка</a>
                                         </h3>
                                         <b class="catalog-price">500 руб.</b>
                                     </div>
@@ -208,7 +207,7 @@
                     </ul>
                 </div>
                 <div class="footer-contacts">
-                    <p class="contacts">г. Москва, ул. Строителей, 15</p>
+                    <p class="contacts"> <br> Москва, ул. Строителей, 15</p>
                     <ul class="site-navigation footer-navigation">
                         <li class="site-navigation-item footer-navigation-item"><a href="delivery.html">Доставка</a></li>
                         <li class="site-navigation-item footer-navigation-item"><a href="guarantee.html">Гарантия</a></li>
