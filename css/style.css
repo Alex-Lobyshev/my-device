@@ -1167,9 +1167,6 @@ img {
 	min-height: 125px;
 	max-width: 1040px;
 	flex-wrap: wrap;
-}
-
-.header-inner-menu_catalog {
 	z-index: 1;
 }
 
@@ -1255,7 +1252,8 @@ img {
 .slider {
 	padding: 0 83px 0 90px;
 	max-width: 1160px;
-	margin-top: -110px;
+	position: relative;
+	top: -110px;
 }
 .slider ul,ol {
 	margin: 0;
@@ -1266,6 +1264,42 @@ img {
 .slide-content {
 	width: 100%;
 	margin-left: 30px;
+	position: relative;
+}
+
+.slide-content::before {
+	content: "";
+	position: absolute;
+	left: 2px;
+	top: 36px;
+	height: 7px;
+	width: 100px;
+	background-color: #ffffff;
+}
+
+.slide-content::after {
+	content: "";
+	position: absolute;
+	right: -37px;
+	top: -14px;
+	font-family: "Gilroy";
+	font-weight: 800;
+	font-size: 179.2px;
+	line-height: 179.2px;
+	letter-spacing: 1.7px;
+	color: #ffffff;
+}
+
+.first-slide::after {
+	content: "01";
+}
+
+.second-slide::after {
+	content: "02";
+}
+
+.third-slide::after {
+	content: "03";
 }
 
 .slide-img {
@@ -1328,7 +1362,51 @@ img {
 	margin-top: -26px;
 	margin-left: 2px;
 }
-/*----------------------------------------------*/
+/*------------------POPULAR----------------------------*/
+.popular {
+	margin-top: 110px;
+}
+.popular-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.popular-item {
+	margin-right: 40px;
+}
+
+.popular-item:last-child {
+	margin-right: 0;
+}
+
+.popular-image {
+	height: 160px;
+	width: 160px;
+	background-color: rgba(240, 197, 46, 0.5);
+	display: flex;
+	justify-content: center;
+}
+
+.popular-image:hover {
+	background-color: rgba(240, 197, 46, 1);
+}
+
+.popular-title {
+	font-family: "Gilroy";
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.1px;
+	color: #000000;
+	width: 120px;
+}
+.popular-link:active .popular-image img,
+.popular-link:active .popular-title {
+	opacity: 0.3;
+}
 /*----------------------------------------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
