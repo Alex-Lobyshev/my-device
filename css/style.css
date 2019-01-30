@@ -223,6 +223,7 @@ img {
 
 .button-search:active {
 	color: rgba(255, 255, 255, 0.3);
+	display: block;
 
 	background-color: #000000;
 }
@@ -305,8 +306,9 @@ img {
 .button::before {
 	content: "";
 	position: absolute;
-	right: 0;
-	bottom: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.2s ease-in-out;
 	z-index: -1;
 	height: 8px;
 	width: 100%;
@@ -1254,6 +1256,7 @@ img {
 	max-width: 1160px;
 	position: relative;
 	top: -110px;
+	margin: 0 auto;
 }
 .slider ul,ol {
 	margin: 0;
@@ -1314,6 +1317,8 @@ img {
 	letter-spacing: 0.4px;
 	color: #000000;
 	margin-top: 78px;
+	position: relative;
+	z-index: 1;
 }
 
 .slide-describe {
@@ -1329,7 +1334,7 @@ img {
 	display: none;
 }
 
-.slider-item:nth-child(1) {
+.slider-item--active {
 	display: flex;
 }
 
