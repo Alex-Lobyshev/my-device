@@ -598,7 +598,7 @@ img {
 	letter-spacing: 0.3px;
 
 	margin: 0;
-	max-width: 250px;
+	max-width: 260px;
 }
 
 .catalog-item-title a {
@@ -613,7 +613,8 @@ img {
 	letter-spacing: 0.1px;
 }
 
-.new-item {
+.catalog-item-new::after {
+	content: 'new';
 	position: absolute;
 	top: 28px;
 	right: 26px;
@@ -627,6 +628,8 @@ img {
 	border-radius: 100%;
 	text-transform: uppercase;
 	padding: 16px 12px;
+	height: 56px;
+	width: 56px;
 }
 
 .button-compare {
